@@ -1,0 +1,92 @@
+/* Base */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #ECF2F8;
+    padding: 2rem;
+}
+
+/* GRID CONTAINER */
+.container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-1 {
+        grid-column: span 2;
+    }
+}
+
+@media (min-width: 1100px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .card-1 {
+        grid-column: span 2;
+    }
+
+    .card-5 {
+        grid-column: span 1 / -1; /* full width */
+    }
+}
+
+/* CARD style */
+.card-1, .card-2, .card-3, .card-4, .card-5 {
+    padding: 2rem;
+    border-radius: 0.8rem;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+/* Opsional: warna khusus per card */
+.card-1 { background: #7541C8; color: white; }
+.card-2 { background: #48556A; color: white; }
+.card-3 { background: white; color: black; }
+.card-4 { background: #19212E; color: white; }
+.card-5 { background: white; color: black; }
+
+/* HEADER */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* TEXT BLOCK */
+.profile-text p {
+    margin-bottom: 1rem;
+}
+
+/* Typography fixes */
+#profile-name {
+    font-weight: 600;
+}
+
+#profile-status {
+    opacity: 0.6;
+    font-size: 0.8rem;
+}
+
+#profile-description {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+#profile-quote {
+    opacity: 0.9;
+    line-height: 1.6;
+}
