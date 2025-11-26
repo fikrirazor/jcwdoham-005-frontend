@@ -1,1 +1,34 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* .plus-jakarta-sans-<uniquifier> {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+@theme{
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+  
+}
+
+.nav-dashed-border::before,
+.nav-dashed-border::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, rgba(251,191,36,0.7), transparent);
+}
+
+.nav-dashed-border::before {
+  top: 0;
+  height: 40%;
+}
+
+.nav-dashed-border::after {
+  bottom: 0;
+  height: 40%;
+  background: linear-gradient(to top, rgba(251,191,36,0.7), transparent);
+}
