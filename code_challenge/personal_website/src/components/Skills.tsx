@@ -1,3 +1,4 @@
+import { Mouse } from "lucide-react";
 function Skills() {
   const skills = [
     {
@@ -31,9 +32,23 @@ function Skills() {
   ];
 
   return (
-    <section className="h-screen py-12 px-4 sm:px-6 lg:px-8 bg-black">
-      <div className="max-w-screen-2xl mx-auto">
-        <h2 className="text-3xl font-semibold text-white mb-8 text-center">
+    <section className=" py-12 px-4 sm:px-6 lg:px-8 text-white bg-black">
+      <div className="max-w-screen-2xl mx-auto px-6 py-16">
+        
+        {/* Scroll Indicator */}
+        <div className="flex flex-col items-center mb-6">
+          <Mouse className="mb-2 opacity-80" />
+
+          {/* dotted scroll line */}
+          <div className="flex flex-col items-center gap-1">
+            <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
+            <div className="w-1 h-1 bg-gray-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-gray-600 rounded-full"></div>
+            <div className="w-1 h-1 bg-gray-700 rounded-full"></div>
+          </div>
+        </div>
+        
+        <h2 className="text-6xl pb-10 font-extrabold text-white mb-8 text-center">
           My Skills
         </h2>
 
