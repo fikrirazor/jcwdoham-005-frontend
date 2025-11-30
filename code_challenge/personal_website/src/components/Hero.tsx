@@ -10,7 +10,7 @@ function Hero() {
       }}
     >
       <div className=" text-left h-screen flex flex-col justify-center items-center bg-black/30 backdrop-blur-sm">
-        <div className="container mx-auto flex px-5 py-12 items-start justify-start flex-col">
+        <div className="container max-w-screen-2xl mx-auto flex px-5 py-12 items-start justify-start flex-col">
           <h1 className="font-jakarta md:text-6xl text-3xl mb-0 font-bold text-white tracking-tight leading-tight font-light">
             Hello
             <br /> There... <br />

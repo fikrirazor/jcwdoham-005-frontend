@@ -32,7 +32,7 @@ function Skills() {
 
   return (
     <section className="h-screen py-12 px-4 sm:px-6 lg:px-8 bg-black">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-screen-2xl mx-auto">
         <h2 className="text-3xl font-semibold text-white mb-8 text-center">
           My Skills
         </h2>

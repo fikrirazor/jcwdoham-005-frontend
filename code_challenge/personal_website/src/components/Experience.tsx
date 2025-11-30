@@ -37,29 +37,29 @@ function Experience() {
   ];
 
   return (
-    <section className="Experience  text-center h-screen flex flex-col justify-center items-center text-white bg-black">
-      <div className="relative w-9/12">
-        
-        <div className="absolute -left-3 -top-3 bg-black border-2 border-white w-full h-full"></div>
+    <section className="Experience  text-center h-screen  bg-black">
+      <div className=" max-w-screen-2xl mx-40 p-20 justify-center items-center text-white">
+        <div className="relative my-20 ">
+          <div className="absolute -left-3 -top-3 bg-black border-2 border-white w-full h-full"></div>
 
-       
-        <div className="relative bg-white border-2 border-white p-6 text-black space-y-6">
-          <h2 className="text-2xl font-bold mb-4">Work History</h2>
+          <div className="relative bg-white border-2 border-white p-6 text-black space-y-6">
+            <h2 className="text-2xl font-bold mb-4">Work History</h2>
 
-          {workHistory.map((job, index) => (
-            <div key={index} className="space-y-1">
-              <h3 className="text-xl font-semibold">
-                {job.title} — {job.company}
-              </h3>
-              <p className="text-sm italic">{job.timeline}</p>
+            {workHistory.map((job, index) => (
+              <div key={index} className="space-y-1">
+                <h3 className="text-xl font-semibold">
+                  {job.title} — {job.company}
+                </h3>
+                <p className="text-sm italic">{job.timeline}</p>
 
-              <ul className="list-disc list-inside mt-2 space-y-1">
-                {job.responsibilities.map((task, i) => (
-                  <li key={i}>{task}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
+                <ul className="list-disc list-inside mt-2 space-y-1">
+                  {job.responsibilities.map((task, i) => (
+                    <li key={i}>{task}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

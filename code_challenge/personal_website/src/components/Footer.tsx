@@ -1,25 +1,25 @@
 function Footer() {
   return (
-    <footer className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <footer className="mx-auto w-full max-w-screen-2xl p-4 py-6 lg:py-8">
       <div className="md:flex md:justify-between">
         <div className="mb-6 md:mb-0">
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+          <span className="self-center text-2xl font-semibold whitespace-nowrap ">
             Footer
           </span>
         </div>
         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
               Resources
             </h2>
           </div>
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
               Follow us
             </h2>
           </div>
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
               Legal
             </h2>
             <ul className="text-gray-500 dark:text-gray-400 font-medium">

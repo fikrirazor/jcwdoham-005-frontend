@@ -1,6 +1,7 @@
 function About() {
   return (
     <section className="About text-center h-screen flex flex-col justify-center items-center text-white bg-black">
+      <div className="max-w-screen-2xl mx-auto">
       <p>
         {" "}
         I’m a full-stack web developer with a strong passion for building
@@ -30,6 +31,7 @@ function About() {
             technical challenges.
           </li>
         </ul>
+      </div>
       </div>
     </section>
   );
