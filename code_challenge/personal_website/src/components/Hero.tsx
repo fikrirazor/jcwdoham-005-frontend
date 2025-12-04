@@ -5,6 +5,7 @@ import TypingText from "@/components/ui/shadcn-io/typing-text";
 import { Link } from "react-router";
 import { Particles } from "@/components/ui/shadcn-io/particles";
 import AnimatedContent from "@/components/AnimatedContent";
+import ScrollIndicator from "@/components/ScrollIndicator";
 
 function Hero() {
   return (
@@ -98,18 +99,9 @@ function Hero() {
                   />
                 </Link>
               </div>
-              {/* Scroll Indicator */}
-              <div className="flex flex-col items-center mb-6 text-cream-light">
-                <Mouse className="mb-2 opacity-80" />
+              
+              <ScrollIndicator />
 
-                {/* dotted scroll line */}
-                <div className="flex flex-col items-center gap-1">
-                  <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
-                  <div className="w-1 h-1 bg-gray-500 rounded-full"></div>
-                  <div className="w-1 h-1 bg-gray-600 rounded-full"></div>
-                  <div className="w-1 h-1 bg-gray-700 rounded-full"></div>
-                </div>
-              </div>
               <div className="text-right text-cream-light">
                 <Link to="#Contact">
                   <TypingText
