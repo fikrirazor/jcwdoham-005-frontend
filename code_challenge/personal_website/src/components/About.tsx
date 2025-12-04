@@ -21,20 +21,9 @@ const coreValues = [
 
 function About() {
   return (
-    <section className="About  bg-black text-white flex items-center">
+    <section className="About  bg-ink text-white flex items-center">
       <div className="max-w-screen-2xl mx-auto px-6 py-16">
-        {/* Scroll Indicator */}
-        <div className="flex flex-col items-center mb-6">
-          <Mouse className="mb-2 opacity-80" />
 
-          {/* dotted scroll line */}
-          <div className="flex flex-col items-center gap-1">
-            <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
-            <div className="w-1 h-1 bg-gray-500 rounded-full"></div>
-            <div className="w-1 h-1 bg-gray-600 rounded-full"></div>
-            <div className="w-1 h-1 bg-gray-700 rounded-full"></div>
-          </div>
-        </div>
         <h1 className="flex flex-col items-center mb-12 mt-5 text-6xl font-extrabold">
           About
         </h1>

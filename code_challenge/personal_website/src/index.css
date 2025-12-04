@@ -54,6 +54,17 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Font Custom */
+  --font-jakarta: var(--font-jakarta);
+  
+  /* ====== Custom color  ======*/
+  
+  /* Base Color */
+  --color-ink: var(--ink);
+  --color-cream-light: var(--cream-light);
+
+  
 }
 
 :root {
@@ -89,6 +100,25 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+
+  --ink: #28282e;
+  --plum-mist: #6c5671;
+  --soft-latte: #d9c8bf;
+  --coral-blush: #f98284;
+  --lavender-light: #b0a9e4;
+  --sky-fog: #accce4;
+  --mint-breeze: #b3e3da;
+  --candy-pink: #feaae4;
+  --sage-green: #87a889;
+  --fresh-lime: #b0eb93;
+  --soft-lemon: #e9f59d;
+  --peach-milk: #ffe6c6;
+  --clay-rose: #dea38b;
+  --apricot-glow: #ffc384;
+  --vanilla-sun: #fff7a0;
+  --cream-light: #fff7e4;
 }
 
 .dark {
