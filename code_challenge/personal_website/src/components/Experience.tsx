@@ -23,27 +23,37 @@ function Experience() {
   ];
 
   return (
-    <section className="Experience text-center  bg-ink">
-      <div className=" max-w-screen-2xl mx-auto px-20 pt-12 justify-center items-center text-cream-light">
-        <div className="flex">
-          <div className="w-1/3 flex flex-col justify-center">
-            <h1 className="text-6xl font-extrabold">Experience</h1>
+    <section className="Experience bg-ink">
+      <div className=" max-w-screen-2xl mx-auto px-20 pt-12  ">
+        <div className="flex flex-col lg:flex-row">
+          <div className="lg:w-1/3 flex flex-col justify-center">
+            <h1 className="text-4xl font-extrabold text-cream-light text-center lg:text-left  lg:text-5xl xl:text-6xl">
+              Experience
+            </h1>
           </div>
-          <div className="w-2/3">
-            <div className="relative my-20 hover:-left-1 hover:-top-1 ">
+          <div className="lg:w-2/3">
+            <div className="relative my-20 hover:-left-1 hover:-top-1">
               <div className="absolute -left-3 -top-3 bg-ink border-2 border-cream-light w-full h-full"></div>
 
-              <div className="relative bg-cream-light border-2 border-cream-light p-6 text-ink space-y-6">
-                <h2 className="text-2xl font-bold mb-4">Work History</h2>
+              <div className="relative bg-cream-light border-2 border-cream-light p-6 text-ink space-y-6 text-center">
+                <h2 className="text-2xl font-bold inline-block px-3 py-1 bg-ink text-cream-light mb-4">
+                  Work History
+                </h2>
 
                 {workHistory.map((job, index) => (
                   <div key={index} className="space-y-1">
                     <h3 className="text-xl font-semibold">
-                      {job.title} — {job.company}
+                      <span className="inline-block px-3 py-1 bg-ink text-cream-light">
+                        {job.title}
+                      </span>{" "}
+                      — {job.company}
                     </h3>
                     <p className="text-sm italic">{job.timeline}</p>
 
                     <ul className="list-disc list-inside mt-2 space-y-1">
+                      <h4 className="text-lg font-semibold mb-3">
+                        Responsibility:
+                      </h4>
                       {job.responsibilities.map((task, i) => (
                         <li key={i}>{task}</li>
                       ))}
