@@ -86,7 +86,8 @@ function Skills() {
         <SparkleDivider/>
         {skills.map(({ category, items }) => (
           <div key={category} className="mb-14">
-            {/* Category Title */}
+
+            {/* Title */}
             <h3 className="text-3xl font-bold text-cream-light mb-6 tracking-wide text-center">
               {category}
             </h3>
