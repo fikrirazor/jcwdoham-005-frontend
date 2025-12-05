@@ -1,4 +1,4 @@
-import { Sparkle, Mouse } from "lucide-react";
+import SparkleDivider from "@/components/ui/SparkleDivider";
 import ScrollIndicator from "@/components/ScrollIndicator";
 
 const coreValues = [
@@ -28,15 +28,10 @@ function About() {
           About
         </h1>
 
-        {/* Sparkle Divider */}
-        <h1 className="flex justify-center gap-2 py-6">
-          <Sparkle size={16} className="text-gray-400 opacity-70" />
-          <Sparkle size={16} className="text-gray-400 opacity-70" />
-          <Sparkle size={16} className="text-gray-400 opacity-70" />
-        </h1>
-
+        <SparkleDivider/>
+        
         {/* About Text */}
-        <p className=" text-justify leading-relaxed max-w-3xl mx-auto mb-12">
+        <p className="text-center leading-relaxed max-w-6xl mx-auto mb-12">
           Hello, I am a Full-Stack Developer focused on modern web development,
           from building interactive UIs to developing Backend and APIs.<br/><br/>
           I have developed projects such as a Todos App, Web Portfolio, and Company

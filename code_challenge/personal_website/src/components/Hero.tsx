@@ -1,6 +1,5 @@
 import heroBackground from "../assets/astronomy-1868560_1920.jpg";
 import photoProfile from "../assets/PhotoProfile.jpg";
-import { Mouse } from "lucide-react";
 import TypingText from "@/components/ui/shadcn-io/typing-text";
 import { Link } from "react-router";
 import { Particles } from "@/components/ui/shadcn-io/particles";
