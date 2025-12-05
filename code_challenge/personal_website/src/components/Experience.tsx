@@ -37,12 +37,12 @@ function Experience() {
   ];
 
   return (
-    <section className="Experience  text-center h-screen  bg-black">
-      <div className=" max-w-screen-2xl mx-40 p-20 justify-center items-center text-white">
+    <section className="Experience  text-center h-screen  bg-ink">
+      <div className=" max-w-screen-2xl mx-40 p-20 justify-center items-center text-cream-light">
         <div className="relative my-20 ">
-          <div className="absolute -left-3 -top-3 bg-black border-2 border-white w-full h-full"></div>
+          <div className="absolute -left-3 -top-3 bg-ink border-2 border-cream-light w-full h-full"></div>
 
-          <div className="relative bg-white border-2 border-white p-6 text-black space-y-6">
+          <div className="relative bg-cream-light border-2 border-cream-light p-6 text-ink space-y-6">
             <h2 className="text-2xl font-bold mb-4">Work History</h2>
 
             {workHistory.map((job, index) => (

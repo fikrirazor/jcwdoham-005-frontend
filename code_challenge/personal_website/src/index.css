@@ -65,7 +65,10 @@
   --color-cream-light: var(--cream-light);
   --color-clay-rose: var(--clay-rose);
   --color-plum-mist: var(--plum-mist);
-  
+  --color-lavender-light: var(--lavender-light);
+  --color-sky-fog: var(--sky-fog);
+  --color-peach-milk: var(--peach-milk);
+  --color-soft-latte: var(--soft-latte);
 }
 
 :root {
