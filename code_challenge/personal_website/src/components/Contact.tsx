@@ -6,7 +6,7 @@ function Contact() {
 
   return (
     <div className="Contact bg-ink text-cream-light py-16">
-      <h1 className="text-center text-6xl font-bold">Contact</h1>
+      <h1 className="text-center text-6xl font-extrabold">Contact</h1>
       <p className="text-center mt-4 text-gray-300">
         I'm currently available for work
       </p>

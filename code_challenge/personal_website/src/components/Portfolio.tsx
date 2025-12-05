@@ -30,11 +30,12 @@ function Portfolio() {
   return (
     <section className="Experience bg-ink">
       <div className=" max-w-screen-2xl mx-auto py-32 lg:flex lg:max-h-none lg:items-center">
-          <div className="mx-auto max-w-6xl ">
-            <h1 className="mb-14 bg-cream-light bg-clip-text text-4xl font-extrabold text-transparent sm:text-5xl text-center">
-              Portfolio
-            </h1>
-            {workItems.map((item, index) => (
+       
+        <div className="mx-auto max-w-6xl ">
+          <h1 className="mb-14 bg-cream-light bg-clip-text text-4xl font-extrabold text-transparent sm:text-5xl text-center">
+            Portfolio
+          </h1>
+          {workItems.map((item, index) => (
             <div key={index} className="relative my-20">
               <div className="absolute -right-3 -top-3 bg-ink border-2 border-cream-light w-full h-full"></div>
               <div className="relative border-2 border-cream-light p-6 text-ink bg-cream-light grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-y-0 lg:gap-x-8 grid-rows-1 mb-20">
@@ -53,8 +54,8 @@ function Portfolio() {
                 </div>
               </div>
             </div>
-            ))}
-          </div>
+          ))}
+        </div>
       </div>
     </section>
   );
